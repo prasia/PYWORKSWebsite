@@ -199,7 +199,7 @@ header.shadow .logo {
 
 .partners-title {
   font-size: 3rem;
-  color: var(--light-purple); /* Adjust to match your design */
+  color: var(--light-purple);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -208,7 +208,7 @@ header.shadow .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Adjust the gap between logos as needed */
+  gap: 40px;
 }
 
 .partner-logo {
@@ -217,7 +217,7 @@ header.shadow .logo {
 }
 
 .partner-logo img {
-  max-width: 150px; /* Adjust size as needed */
+  max-width: 150px;
   height: auto;
 }
 
