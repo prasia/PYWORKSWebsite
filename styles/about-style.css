@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-color: #646fd4;
+    --second-color: #2f30a8;
+    --text-color: #0d0da9;
+    --bg-color: #ebf0ff;
+    --hover-color: #9ba3eb;
+    --light-purple: #c8cbf9;
+    --white: #e8e8f8;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow {
+    background: var(--text-color);
+    box-shadow: 0 1px 4px hsl(0, 4%, 14% / 10);
+    transition: 0.4s;
+}
+
+header.shadow .logo {
+    color: var(--bg-color);
+    text-decoration: none; /* Ensure no underline */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0; /* Reduced padding to bring elements closer together */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-left: 2%;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.button-header {
+    color: var(--bg-color);
+    margin: 0 10px; /* Added margin for spacing between links */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.button-header:visited, .button-header:active {
+    color: var(--bg-color); /* Ensure links stay white even after being clicked */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.button-header:hover {
+    text-decoration: none; /* No underline on hover */
+}
+
+
+
+/* Main Content CSS */
+.main {
+  background-color: var(--container-color);
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  background-color: var(--container-color);
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.main__content {
+  color: #fff;
+  width: 50%; /* Takes up half of the container */
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-size: 100%;
+  background-clip: text;
+  color: var(--bg-color); /* No need for vendor prefixes */
+}
+
+.main__content h2 {
+  font-size: 1.5rem; /* Smaller size */
+  margin-top: 10px;
+  background-size: 100%;
+  background-clip: text;
+  color: var(--bg-color); /* No need for vendor prefixes */
+  font-weight: normal; /* Not bold */
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main__img--container {
+  width: 50%; /* Takes up half of the container */
+  text-align: center; /* Center align the image inside the container */
+}
+
+#main__img {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.hero-image {
+    flex: 1; /* Takes up the right side */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center image vertically */
+    max-width: 50%; /* Ensure it does not exceed half of the hero section */
+}
+
+.hero-image img {
+    max-width: 100%; /* Responsive image width */
+    height: auto;
+    object-fit: contain; /* Maintain image aspect ratio */
+}
+
+/* Mission Section */
+#mission {
+  background-color: var(--bg-color);
+  padding: 50px 0;
+}
+
+.mission-title {
+  font-size: 3rem;
+  color: var(--text-color); /* Adjust to match your design */
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.mission.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-text {
+  flex: 1;
+  padding: 20px;
+  text-align: center; /* Center-align text */
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center-align the image */
+  align-items: center;
+}
+
+.mission-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Organization Partners Section */
+#partners {
+  background: var(--second-color); /* Adjust as needed */
+  padding: 70px 0;
+}
+
+.partners-title {
+  font-size: 3rem;
+  color: var(--light-purple); /* Adjust to match your design */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.partners.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Adjust the gap between logos as needed */
+}
+
+.partner-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.partner-logo img {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Founding Story Section */
+#founding-story {
+  padding: 70px 0;
+  background: var(--light-purple);
+}
+
+.founding-story.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.founding-story-title {
+  font-size: 3rem;
+  color: var(--second-color);
+  margin-bottom: 30px;
+}
+
+.founding-story-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.founding-story-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.founding-story-text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-align: center; /* Center-align the text */
+}
+
+
+/* Mission Section */
+#mission {
+  background-color: var(--white); /* Match the background color */
+  padding: 50px 0;
+}
+
+.mission-title {
+  font-size: 3rem;
+  color: var(--text-color); /* Adjust to match your design */
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.mission.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-text {
+  flex: 1;
+  padding: 20px;
+  text-align: center; /* Center-align text */
+}
+
+.mission-text p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center-align the image */
+  align-items: center;
+}
+
+.mission-image img {
+  width: 50%; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Statistics Section */
+#statistics {
+    background: var(--light-purple);
+    padding: 70px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats .stat {
+    flex: 1;
+    margin: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats .stat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.stats-title {
+    font-size: 3rem;
+    color: var(--second-color);
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    background-color:var(--text-color);
+    padding: 50px 0;
+    color: #DBDFFD; /* Light color for text */
+}
+
+.footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--light-purple);
+}
+
+.footer h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--bg-color)
+}
+
+.footer .social-icon {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.footer .social-item {
+    height: 50px;
+    width: 50px;
+}
+
+.footer .social-item img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(70%);
+    transition: filter 0.3s ease;
+}
+
+.footer .social-item:hover img {
+    filter: grayscale(0%);
+}
+
+.footer p {
+    font-size: 1.3rem;
+}
+
+
