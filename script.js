@@ -22,9 +22,10 @@ counters.forEach(counter => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const testimonials = [
-        { text: "“Excellent slides, Good follow up projects that beginners can do and feel accomplished, good step by step instructions, being available for clarifications and good teaching by the instructor. Thank you!!”", author: "- Jaya - parent of Janani and Shrijani" },
-        { text: "“I really liked the experience from this camp. It was also very easy for me to understand the topics we were learning about. I also liked to those mini projects after every class. In all I really liked this Python Camp.”", author: "- Alagappan Arunachalam" },
-        { text: "“This was a great experience! I truly enjoyed learning python especially because of our host Prasi! She was super nice and really patient with us!”", author: "- Stesha Navil" }
+        { text: "“Excellent slides, Good follow up projects that beginners can do and feel accomplished, good step by step instructions, being available for clarifications and good teaching by the instructor. Thank you!!”", author: "- Jaya - parent of Janani and Shrijani, 2023" },
+        { text: "“I really liked the experience from this camp. It was also very easy for me to understand the topics we were learning about. I also liked to those mini projects after every class. In all I really liked this Python Camp.”", author: "- Alagappan Arunachalam, 2023" },
+        { text: "“This was a great experience! I truly enjoyed learning python especially because of our host Prasi! She was super nice and really patient with us!”", author: "- Stesha Navil, 2023" },
+        { text: "Would like to thank you for all the efforts you've made, to share your knowledge with other kids. The well-organized slides, along with the course materials, demonstrates the hours you've put into this, to perfect the course. It was a great opportunity for my Daughter to get introduced into the world of Python, and you did a fabulous job in explaining difficult concepts with ease. Above all, doing it all for no cost, shows your service-mindedness and dedication in paying back to the society. I would like to appreciate you for this great initiative, and wish you a wonderful future.", author: "- Giftson Jebin, 2022 & 2023"}
     ];
 
     let currentIndex = 0;
