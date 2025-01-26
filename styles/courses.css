@@ -188,3 +188,109 @@ header.shadow .logo {
 .footer p {
     font-size: 1.3rem;
 }
+
+/* Fliers Section */
+.intro-fliers-section {
+    padding: 70px 0;
+    background-color: var(--hover-color);
+    text-align: center;
+}
+
+.fliers-title {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.fliers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.flier {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: var(--white);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flier img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.carousel-section.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.carousel-images {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-images img {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.signup-btn {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
