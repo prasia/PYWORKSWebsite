@@ -4,30 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="styles/team.css" rel="stylesheet" type="text/css" />
+  <title>PYWORKS Camps</title>
+  <link href="styles/courses.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
   <header class="shadow">
-      <!--Nav-->
-      <div class = "nav container">
+    <!--Nav-->
+    <div class="nav container">
       <!--Logo-->
-      <a href = "index.html" class = "logo">PYWORKS.</a>
-      <a href= "./about-us.html" class = "button-header">About Us</a>
-        <a href= "./courses.html" class = "button-header">Courses</a>
-        <a href= "./meet-the-team.html" class = "button-header">Our Team</a>
-        <a href= "./contact-us.html" class = "button-header">Contact Us</a>
-      </div>
+      <a href="index.html" class="logo">PYWORKS.</a>
+      <a href="./about-us.html" class="button-header">About Us</a>
+      <a href="./courses.html" class="button-header">Courses</a>
+      <a href="./meet-the-team.html" class="button-header">Our Team</a>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <div class="main">
     <div class="main__container">
+      <div class = "courses-title-bar">
       <div class="main__content">
-        <h1>Our Team</h1>
-        <h2>The people behind PYWORKS!</h2>
+        <h1>Camps Offered</h1>
+        <h2>The backbone of PYWORKS!</h2>
+      </div>
       </div>
       <div class="main__img--container">
         <img id="main__img" src="images/about-img.png" />
@@ -35,10 +36,93 @@
     </div>
   </div>
 
-  
-  
+  <!-- Carousel 1 -->
+  <div class = "body-section">
+  <section class="carousel-section">
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/intro_imgs/adv_2024.png" alt="Intro 2024">
+          <img src="images/intro_imgs/adv_2023.png" alt="Intro 2023">
+          <img src="images/intro_imgs/adv_2022.png" alt="Intro 2022">
+        </div>
+        <div class="carousel-controls">
+          <button class="prev-btn">←</button>
+          <button class="next-btn">→</button>
+        </div>
+      </div>
+      <div class="carousel-text">
+        <h2>Intro to Python</h2>
+        <p>Our Intro to Python camp offers students an engaging way to learn coding fundamentals.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSde_-dKwVSbLu2dHkgs2ToeN51MjLwJHOjbD57AswgbrM0ytA/viewform?usp=sharing&ouid=104304834261695534742" target="_blank"><button class="signup-btn">Sign Up 2025</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 2 -->
+  <section class="carousel-section reverse-layout">
+    <div class="carousel-container">
+      <div class="carousel-text">
+        <h2>Advanced Python</h2>
+        <p>Build on your knowledge and dive into more complex Python topics and projects.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMnmQ0NrmaSPuirLDRu9HCetNLTK_6eQMXMSCdESNd3yk4MQ/viewform?usp=sharing&ouid=104304834261695534742" target="_blank"><button class="signup-btn">Sign Up 2025</button></a>
+      </div>
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/adv_imgs/adv_2024.png" alt="Advanced 2024">
+          <img src="images/adv_imgs/adv_2023.png" alt="Advanced 2023">
+        </div>
+        <div class="carousel-controls">
+          <button class="prev-btn">←</button>
+          <button class="next-btn">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel 3 -->
+  <section class="carousel-section">
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/hack_imgs/hack_2024.png" alt="Hackathon 2024">
+        </div>
+        <div class="carousel-controls">
+          <button class="prev-btn">←</button>
+          <button class="next-btn">→</button>
+        </div>
+      </div>
+      <div class="carousel-text">
+        <h2>Hackathon Prep</h2>
+        <p>Prepare for hackathons with hands-on practice, mentorship, and innovative ideas.</p>
+        <!-- <button class="signup-btn">Sign Up</button> -->
+      </div>
+    </div>
+  </section>
+  </div>
+  <section class="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>PYWORKS.</span></h1>
+      </div>
+      <h2>High quality coding lessons without a price tag!</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="mailto:onlinepythonworkshop@gmail.com"><img src="https://img.icons8.com/bubbles/100/000000/gmail-new.png" alt="Email" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.youtube.com/channel/UCPM5gBV_XwtIjn9q-PwNrjQ"><img src="https://img.icons8.com/bubbles/100/000000/youtube-squared.png" alt="YouTube" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new--v2.png" alt="Instagram" /></a>
+        </div>
+      </div>
+      <p>&copy; PYWORKS 2024</p>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

@@ -51,3 +51,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize with the first testimonial
     updateTestimonial();
 });
+
+// for the courses page:
+document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('.carousel');
+
+  carousels.forEach((carousel) => {
+    const imagesContainer = carousel.querySelector('.carousel-images');
+    const images = imagesContainer.querySelectorAll('img');
+    const prevBtn = carousel.querySelector('.prev-btn');
+    const nextBtn = carousel.querySelector('.next-btn');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      imagesContainer.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    });
+
+    // Initialize position
+    updateCarousel();
+  });
+});
